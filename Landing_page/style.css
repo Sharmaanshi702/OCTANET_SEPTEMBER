@@ -9,10 +9,10 @@
 }
 nav {
     width: 100%;
-    height: 80px;
+    height: 80 px;
     display: flex;
     justify-content: space-between;
-    padding: 20px 5%;
+    padding: 20 px 5%;
     background-color: rgba(71, 5, 5, 0.855);;
 }
 
@@ -53,19 +53,28 @@ nav ul li a:hover {
     font-family: 'Dancing Script', cursive;
 }
 
-section img{
-    position: absolute;
-    top: 6em;
-   right:3em;
-  
+.image1{
+position:absolute;
+right:20em;
+top: 10em;
+flex: 1 1 30rem;
+}
 
+.image2{
+position: absolute;
+right:3em;
+top:10em;
 }
 
 .mainBody{
-    background-color:rgb(249, 212, 124);
-    color: black;
-    font-family: "Fira Sans", sans-serif;
-    width: 100%;
-    height: ;
- 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.mainBody .descrip {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
 }
