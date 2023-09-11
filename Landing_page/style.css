@@ -1,3 +1,7 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fira+Sans&family=Roboto+Slab:wght@400;500&family=Rubik+Iso&family=Source+Code+Pro:wght@300&display=swap');
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -10,4 +14,41 @@ nav {
     justify-content: space-between;
     padding: 20px 5%;
     background-color: rgba(71, 5, 5, 0.855);;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+  
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+  
+nav ul li a {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(240, 240, 6, 0.77);
+}
+  
+nav ul li:hover {
+    background-color:rgba(165, 42, 42, 0.917);
+}
+  
+nav ul li a:hover {
+    color:yellow;
+}
+  
+#shopName{
+    font-size: 28px;
+    margin-bottom: 10px;
+   position: absolute;
+   top: 0.5em;
+  left: 8em;
+    color:chocolate;
+    font-family: 'Dancing Script', cursive;
 }
