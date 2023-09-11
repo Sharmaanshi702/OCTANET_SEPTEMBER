@@ -52,3 +52,20 @@ nav ul li a:hover {
     color:chocolate;
     font-family: 'Dancing Script', cursive;
 }
+
+section img{
+    position: absolute;
+    top: 6em;
+   right:3em;
+  
+
+}
+
+.mainBody{
+    background-color:rgb(249, 212, 124);
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+    width: 100%;
+    height: ;
+ 
+}
