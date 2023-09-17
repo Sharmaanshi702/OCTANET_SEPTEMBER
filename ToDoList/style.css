@@ -1,0 +1,50 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fira+Sans&family=Jacques+Francois+Shadow&family=Poppins:wght@200&family=Roboto+Slab:wght@400;500&family=Rubik+Iso&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+.container1{
+   background: linear-gradient(135deg, #eeaeca, #94bbe9);
+   min-height: 100vh;
+width:100% ;
+padding: 10px;
+
+
+}
+
+.toDoList{
+width:100%;
+max-width: 540px;
+background-color:yellowgreen;
+margin: 100px auto 20px ;
+padding: 40px 30px 70px;
+border-radius: 15px;
+}
+
+.toDoList h2{
+color: #002765;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+
+}
+
+.toDoList h2 img{
+    width: 50px;
+    margin-left: 20px;
+
+}
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+background-color: #edeef0;
+border-radius: 30px;
+padding-left: 20px;
+margin-bottom: 25px;
+}
