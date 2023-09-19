@@ -20,7 +20,7 @@ padding: 10px;
 .toDoList{
 width:100%;
 max-width: 540px;
-background-color:yellowgreen;
+background-color:#c8b050;
 margin: 100px auto 20px ;
 padding: 40px 30px 70px;
 border-radius: 15px;
@@ -31,11 +31,13 @@ color: #002765;
 display: flex;
 align-items: center;
 margin-bottom: 20px;
+font-size: 45px;
 
 }
 
 .toDoList h2 img{
-    width: 50px;
+    width: 89px;
+    height: 90px;
     margin-left: 20px;
 
 }
@@ -47,4 +49,40 @@ background-color: #edeef0;
 border-radius: 30px;
 padding-left: 20px;
 margin-bottom: 25px;
+}
+
+input{
+flex:1 ;
+border:none;
+outline:none;
+background: transparent;
+padding:10px;
+font-weight: 14px;
+
+}
+
+button{
+    border:none;
+outline:none;
+padding:16px 50px;
+background: #ff5945;
+color:fff;
+font-size: 16px;
+cursor:pointer;
+border-radius: 40px;
+}
+
+ul li{
+list-style: none;
+position:relative;
+font-size: 17px;
+padding: 12px 8px 12px 50px;
+user-select: none;
+cursor: pointer;
+}
+
+ul li::before{
+content: '';
+position:absolute;
+
 }
