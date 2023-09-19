@@ -20,9 +20,10 @@ padding: 10px;
 }
 
 .toDoList{
+    border:solid rgb(89, 162, 241);
 width:100%;
-max-width: 540px;
-background-color:rgb(194, 160, 11);
+max-width: 800px;
+background-color:#6ed4d8;
 margin: 100px auto 20px ;
 padding: 40px 30px 70px;
 border-radius: 15px;
@@ -35,14 +36,14 @@ align-items: center;
 margin-bottom: 20px;
 font-size: 45px;
 font-family: 'Skranji', cursive;
-color:black;
+color:rgb(47, 42, 42);
 
 }
 
 .toDoList h2 img{
-    width: 89px;
-    height: 90px;
-    margin-left: 19px;
+    width: 90px;
+    height: 100px;
+    margin-left: 20px;
 
 }
 .rows{
@@ -53,6 +54,7 @@ background: linear-gradient(135deg, #eeaeca, #94bbe9);
 border-radius: 35px;
 padding-left: 20px;
 margin-bottom: 25px;
+margin-right:15px;
 border-style:solid;
 border-width: 8px;
 border-width:3px;
@@ -71,14 +73,15 @@ font-weight: 14px;
 button{
     border:none;
 outline:none;
-padding:16px 50px;
+padding:17px 50px;
 background:#94bbe9;
 color:black;
 font-size: 28px;
 font-family: 'Skranji', cursive;
 cursor:pointer;
 border-radius: 35px;
-border-style: solid;
+border-style:dotted;
+
 
 }
 
@@ -122,13 +125,31 @@ ul li span{
     width:40px;
     height:40px;
     font-size: 22px;
-    color:#555;
+    color:#0f0e0e;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
 }
 
 ul li span:hover{
-    background:#edeef0;
+    background:#f7cfe0;
 }
 
+::placeholder{
+    font-size: 25px;
+   color:black;
+}
+ #DatePicker{
+color:#052563;
+height:60px;
+width:120px;
+border-style:hidden;
+margin-right:30px;
+padding:5px;
+}
+/*
+#DatePicker label{
+    box-sizing: border-box;
+    padding-right:30px;
+   
+} */
