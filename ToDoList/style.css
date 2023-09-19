@@ -20,7 +20,7 @@ padding: 10px;
 .toDoList{
 width:100%;
 max-width: 540px;
-background-color:#c8b050;
+background-color:white;
 margin: 100px auto 20px ;
 padding: 40px 30px 70px;
 border-radius: 15px;
@@ -84,5 +84,31 @@ cursor: pointer;
 ul li::before{
 content: '';
 position:absolute;
+height:28px;
+width:28px;
+border-radius: 50%;
+background-image: url(circleUnCheck.png);
+background-size: cover;
+background-position: center;
+top:12px;
+left:8px;
 
+}
+
+ul li.selected{
+color:#555;
+text-decoration: line-through;
+
+}
+
+ul li.selected::before{
+    background-image: url( circleCheck.png);
+}
+
+ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
 }
