@@ -102,7 +102,7 @@ text-decoration: line-through;
 }
 
 ul li.selected::before{
-    background-image: url( circleCheck.png);
+    background-image: url(circleCheck.png);
 }
 
 ul li span{

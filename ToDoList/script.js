@@ -1,26 +1,38 @@
-const input_Field = document.getElementById("inputField");
-const list_Container = document.getElementById("listContainer");
+const inputField = document.getElementById("input-Field");
+const listContainer = document.getElementById("list-Container");
 
 function addTask(){
-if(input_Field.value== ''){
+if(inputField.value== ''){
     alert("You must write something!");
 }
 else{
     let li=document.createElement("li");
-    li.innerHTML=input_Field.value;
-    list_Container.appendChild(li);
+    li.innerHTML=inputField.value;
+    listContainer.appendChild(li);
    let span = document.createElement("span");
    span.innerHTML= "\u00d7";
    li.appendChild(span);
 }
-input_Field.value="";
+inputField.value="";
+saveInfo();
 }
 
-list_Container.addEventListener("click", function(e){
+listContainer.addEventListener("click", function(e){
     if(e.target.tagName==="LI"){
         e.target.classList.toggle("checked");
+        saveInfo();
     }
     else if(e.target.tagName==="SPAN"){
         e.target.parentElement.remove();
+        saveInfo()
     }
 }, false) 
+
+function saveInfo(){
+localStorage.setItem("data", listContainer.innerHTML);
+}
+
+function showTask(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+showTask();
