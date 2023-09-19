@@ -3,7 +3,7 @@ const listContainer = document.getElementById("list-Container");
 
 function addTask(){
 if(inputField.value== ''){
-    alert("You must write something!");
+    alert("You must write some Task to be added!!");
 }
 else{
     let li=document.createElement("li");
@@ -13,7 +13,7 @@ else{
    span.innerHTML= "\u00d7";
    li.appendChild(span);
 }
-inputField.value="";
+inputField.value= "";
 saveInfo();
 }
 
